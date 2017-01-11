@@ -1,0 +1,9 @@
+﻿@model BookStore.Domain.Basket.Basket
+<div>
+    <span>
+        <b>Basket: </b>
+        @Model.Carts.Sum(x => x.Quantity) item(s),
+        @Model.Total()
+    </span>
+    @Html.ActionLink("Checkout", "Index", "Basket", new { returnUrl = Request.Url.PathAndQuery }, null)
+</div>

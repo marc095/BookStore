@@ -1,0 +1,45 @@
+﻿@model BookStore.Models.BasketVewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Basket.Carts)
+        {
+            <tr>
+                <td>@item.Book.Title</td>
+                <td>@item.Book.Price</td>
+                <td>@item.Quantity</td>
+                <td>@(item.Quantity * item.Book.Price)</td>
+                <td>
+                    @using (Html.BeginForm("RemoveFromBasket", "Basket"))
+                {
+                        @Html.Hidden("bookId", item.Book.Id)
+                        @Html.HiddenFor(r => r.ReturnUrl)
+                        <input type="submit" value="+Remove" />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" align="right">Total:</td>
+            <td align="right">@Model.Basket.Total()</td>
+        </tr>
+    </tfoot>
+<p align="center" class="actionButtons">
+    <a href="@Model.ReturnUrl">Continue</a>
+    @Html.ActionLink("Checkout now", "Checkout")
+</p>
+</table>

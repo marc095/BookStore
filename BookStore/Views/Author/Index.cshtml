@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BookStore.Models.AuthorViewModel>
+@{
+    ViewBag.Title = "Authors";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    @Html.Partial("PartialAuthorHeader", Model)
+    @foreach (var item in Model)
+    {
+        <tr>
+            @Html.Partial("PartialAuthorContent", item)
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.AuthorId }) |
+            </td>
+        </tr>
+    }
+</table>
+<br />
+@Html.ActionLink("Home", "Index", "Home")

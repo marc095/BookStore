@@ -1,0 +1,32 @@
+﻿@model PagedList.IPagedList<BookStore.Models.BookViewModel>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Books";
+}
+
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Search Book", "Search")
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    @Html.Partial("PartialBookHeader", Model)
+    @foreach (var item in Model)
+    {
+        <tr>
+            @Html.Partial("PartialBookContent", item)
+            <td>
+                @Html.ActionLink("Buy", "AddToBasket","Basket", new { bookId = item.BookId , returnUrl  = Request.Url.PathAndQuery },null) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.BookId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.BookId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.BookId })
+            </td>
+        </tr>
+    }
+</table>
+<br />
+
+Страница @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) из @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+@Html.ActionLink("Home", "Index", "Home")

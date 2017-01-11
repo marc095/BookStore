@@ -1,0 +1,18 @@
+﻿@model IEnumerable<BookStore.Models.PublisherViewModel>
+@{
+    ViewBag.Title = "Publishers";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    @Html.Partial("PartialPublisherHeader", Model)
+    @foreach (var item in Model)
+    {
+        <tr>
+            @Html.Partial("PartialPublisherContent", item)
+        </tr>
+    }
+</table>
+<br />
+@Html.ActionLink("Home", "Index", "Home")

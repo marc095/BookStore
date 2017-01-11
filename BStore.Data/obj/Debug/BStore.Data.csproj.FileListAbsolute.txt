@@ -1,0 +1,1 @@
+c:\users\владелец\documents\visual studio 2015\Projects\BookStore\BStore.Data\obj\Debug\BStore.Data.csprojResolveAssemblyReference.cache

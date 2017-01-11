@@ -1,0 +1,16 @@
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.dll.config
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.pdb
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\BookStore.Data.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\BookStore.Data.pdb
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
+C:\Users\Владелец\Documents\Visual Studio 2015\Projects\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb
